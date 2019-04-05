@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="Burton Sickler" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Burton Sickler</title>
+  </head>
+  <body onload="init()">
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu">
+      <button class="navbar-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+      <div id="links-container">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <header id="home">
+      <!-- Desktop nav menu -->
+      <nav id="top-nav">
+        <a class="active brand" id="homeLink" href="#home">Burton Sickler</a>
+        <div id="links-container">
+          <a id="aboutLink" href="#about">About</a>
+          <a id="worksLink" href="#works">Works</a>
+          <a id="contactLink" href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header-content">
+          <div id="portrait-container"></div>
+          <div class="header-text">
+            <div class="name">Burton Sickler</div>
+            <hr />
+            <div class="tagline">
+              Front End Developer @ Santa Barbara, CA
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h1>About</h1>
+
+      </div>
+    </section>
+    <section id="works">
+      <h1>Works</h1>
+      <div class="project-section">
+        <div class="project-column">
+          <div class="project-container">
+            <a href="https://ucsbveterans.com">
+              <img
+                src="imgs/UCSBvets.png"
+                class="project-image"
+                style="background-color:darkseagreen"
+              />
+              <div class="project-overlay">
+                <div class="project-label">
+                  The UCSB Student Veteran Organization Website
+                </div>
+                <div class="project-details">
+                  <p>
+                    A simple website designed for the Student Veteran
+                    Organization at UC Santa Barbara. It serves as a News
+                    Source, Resource Library and Event Calendar for the group.
+                  </p>
+                  <p>
+                    No frameworks or libraries were used and all markup, styling
+                    and scripts were written by me. I also manage the SEO for
+                    the site.
+                  </p>
+
+                  <div class="project-list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Minimal library size</li>
+                      <li>DOM manipulation</li>
+                      <li>Serverless hosting</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-url">https://ucsbveterans.com</div>
+                  <div class="project-icon-tray">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-css3-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class="project-container">
+            <a
+              href="https://mrl.spudlabs.com"
+              target="popup"
+              onclick="window.open('https://mrl.spudlabs.com','popup','width=530,height=731'); return false;"
+            >
+              <img
+                src="imgs/mrl.png"
+                class="project-image"
+                style="width:100%; max-height:"
+                alt="A view of the materials research lab building, at night"
+              />
+              <div class="project-overlay">
+                <div class="project-label">
+                  QR Code Guided Tour of a Research Lab
+                </div>
+                <div class="project-details">
+                  <p>
+                    An app accompanying a set QR codes for a self-guided tour of
+                    the low-temperature lab in the UCSB Materials Research
+                    Laboratory. Each code leads to a page describing one of the
+                    lab's instruments.
+                  </p>
+                  <p>
+                    The application was designed using React and hosted on a
+                    Google Firebase CDN.
+                  </p>
+                  <div style="text-align: center">
+                    <img
+                      alt="A QR code leading to the webpage"
+                      src="imgs/qrCodeHome.svg"
+                      style="max-width:7.5vw"
+                    />
+                  </div>
+                  <div class="project-url">
+                    https://mrl.spudlabs.com<br />(popup)
+                  </div>
+                  <div class="project-icon-tray">
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-html5"></i>
+                    <img
+                      class="firebase-icon"
+                      src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class="project-container">
+            <a href="https://github.com/BSickler/julienne">
+              <img
+                src="imgs/julienne.svg"
+                class="project-image"
+                alt="the Julienne logo"
+                style="background-color:lemonchiffon"
+              />
+              <div class="project-overlay">
+                <div class="project-label">Julienne on GitHub</div>
+                <div class="project-details">
+                  <p>
+                    The successor to the TAU app, Julienne is an application
+                    designed for inventory management and tracking. The project
+                    is ongoing but will eventually offer both a desktop
+                    application and web-app framework.
+                  </p>
+
+                  <p>
+                    The desktop component is built with the ElectronJS library,
+                    and uses NodeJS to interact with the local OS. The UI is
+                    built with React and data storage is held in the Firebase
+                    cloud.
+                  </p>
+
+                  <div class="project-list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Cloud Functions</li>
+                      <li>Desktop Environment</li>
+                      <li>CRUD operations</li>
+                      <li>Account management</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-url">
+                    https://github.com/BSickler/julienne
+                  </div>
+                  <div class="project-icon-tray">
+                    <i class="fab fa-react"></i>
+                    <img
+                      class="firebase-icon"
+                      src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
+                    />
+                    <img class="electron-icon" src="imgs/electron.svg" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class="project-container">
+            <img
+              src="imgs/TAU.png"
+              class="project-image"
+              style="background-color:var(--main-bg-color)"
+              alt="A screenshot of the TEMPO Automated Utility entry menu"
+            />
+            <div class="project-overlay">
+              <div class="project-label">TEMPO Automation Utility</div>
+              <div class="project-details">
+                <p>
+                  TAU was created to simplify some of the daily tasks during my
+                  time at UCSB's Materials Research Lab. The application tracks
+                  inventory and maintenance records while automating
+                  notifications.
+                </p>
+
+                <p>
+                  The code relies heavily on DOM manipulation and utilizes cloud
+                  functionality. User authentication, serverless functions and
+                  data storage are all contained in the Firebase ecosystem.
+                </p>
+
+                <div class="project-list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>DOM manipulation</li>
+                    <li>User permissions</li>
+                    <li>CRUD operations</li>
+                  </ul>
+                </div>
+
+                <div class="project-url"></div>
+                <div class="project-icon-tray">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <img
+                    class="firebase-icon"
+                    src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="contact">
+        <h1>Contact</h1>
+        <div class="contact-icon-tray">
+          <a href="mailto:bsickler@usb.edu">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/burton-sickler-39607a163/">
+            <img src="imgs/ln.png" alt="LinkedIn Logo" style="height:2em" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
