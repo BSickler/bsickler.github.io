@@ -116,7 +116,7 @@ a.active:hover {
 
 .header-content {
   margin: auto;
-  width: fit-content;
+  width: max-content;
   padding: 2vh 15px;
   text-align: center;
   background-color: var(--main-accent-color);
