@@ -27,7 +27,7 @@
       </button>
       <div id="links-container">
         <a href="#about">About</a>
-        <a href="#works">Works</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -38,7 +38,7 @@
         <a class="active brand" id="homeLink" href="#home">Burton Sickler</a>
         <div id="links-container">
           <a id="aboutLink" href="#about">About</a>
-          <a id="worksLink" href="#works">Works</a>
+          <a id="portfolioLink" href="#portfolio">Portfolio</a>
           <a id="contactLink" href="#contact">Contact</a>
         </div>
       </nav>
@@ -59,11 +59,36 @@
 
     <section id="about">
       <h1>About</h1>
+      <div class="about-container">
+        <div class="about-content">
+          <p>
+            Enthusiastic results oriented front-end developer, proactive at
+            identifying opportunities for software driven solutions, while
+            working independently under strict deadlines. Proven track record of
+            job innovation and excellence throughout my employment history,
+            resulting in recognition for top performance.
+          </p>
+          <p>
+            Background experience in Web Applications and practical knowledge in
+            Responsive Single Page Applications.
+          </p>
+        </div>
 
+        <div class="about-content">
+          <h2>Areas of Interest</h2>
+          <p>Front End</p>
+          <p>HTML5, ES6, React, Svelte, ThreeJS, VanillaJS, CSS3</p>
+          <p>Back End</p>
+          <p>NodeJS, NoSQL, Sysadmin</p>
+          <p>Cross-Platform</p>
+          <p>Responsive Web Design, Apache Cordova, ElectronJS</p>
+          <p>Cloud</p>
+          <p>AWS, Firebase</p>
+        </div>
       </div>
     </section>
-    <section id="works">
-      <h1>Works</h1>
+    <section id="portfolio">
+      <h1>Portfolio</h1>
       <div class="project-section">
         <div class="project-column">
           <div class="project-container">
@@ -100,6 +125,7 @@
 
                   <div class="project-url">https://ucsbveterans.com</div>
                   <div class="project-icon-tray">
+                    <i class="fas fa-mobile-alt"></i>
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-js-square"></i>
                     <i class="fab fa-css3-alt"></i>
@@ -138,7 +164,7 @@
                     The application was designed using React and hosted on a
                     Google Firebase CDN.
                   </p>
-                  <div style="text-align: center">
+                  <div class="project-graphics" style="text-align: center">
                     <img
                       alt="A QR code leading to the webpage"
                       src="imgs/qrCodeHome.svg"
@@ -149,6 +175,7 @@
                     https://mrl.spudlabs.com<br />(popup)
                   </div>
                   <div class="project-icon-tray">
+                    <i class="fas fa-mobile-alt"></i>
                     <i class="fab fa-react"></i>
                     <i class="fab fa-html5"></i>
                     <img
@@ -164,7 +191,7 @@
 
         <div class="project-column">
           <div class="project-container">
-            <a href="https://github.com/BSickler/julienne">
+            <a href="https://github.com/bsickler/julienne">
               <img
                 src="imgs/julienne.svg"
                 class="project-image"
@@ -208,6 +235,7 @@
                       src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
                     />
                     <img class="electron-icon" src="imgs/electron.svg" />
+                    <i class="fab fa-html5"></i>
                   </div>
                 </div>
               </div>
@@ -216,7 +244,10 @@
         </div>
 
         <div class="project-column">
-          <div class="project-container">
+          <div
+            class="project-container slideshow-link"
+            onclick="Modal.Open('TAU')"
+          >
             <img
               src="imgs/TAU.png"
               class="project-image"
@@ -250,6 +281,7 @@
 
                 <div class="project-url"></div>
                 <div class="project-icon-tray">
+                  <i class="fas fa-mobile-alt"></i>
                   <i class="fab fa-html5"></i>
                   <i class="fab fa-js-square"></i>
                   <i class="fab fa-css3-alt"></i>
@@ -265,6 +297,24 @@
       </div>
     </section>
 
+    <div id="modal">
+      <span class="modal-close-icon" onclick="Modal.Close()">&times;</span>
+      <div id="modal-content">
+        <div id="slide-container">
+          <img id="slide" src="" />
+        </div>
+        <a id="modal-prev" onclick="Modal.ChangeSlide(-1)">&#10094;</a>
+        <a id="modal-next" onclick="Modal.ChangeSlide(1)">&#10095;</a>
+        <div class="container">
+          <div class="modal-caption-container">
+            <p id="modal-caption"></p>
+            <p id="modal-description"></p>
+          </div>
+          <div id="modal-clip-container"></div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div id="contact">
         <h1>Contact</h1>
@@ -272,7 +322,10 @@
           <a href="mailto:bsickler@usb.edu">
             <i class="fas fa-envelope"></i>
           </a>
-          <a href="https://www.linkedin.com/in/burton-sickler-39607a163/">
+          <a href="https://github.com/bsickler">
+            <i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/burtonsickler">
             <img src="imgs/ln.png" alt="LinkedIn Logo" style="height:2em" />
           </a>
         </div>
